@@ -56,9 +56,7 @@ $(function() {
     if (pos2 > $('#portfolio').offset().top) {
       highlightLink('portfolio');
     }
-    if (pos2 > $('#blog').offset().top) {
-      highlightLink('blog');
-    }
+   
     if (
       pos2 > $('#contact').offset().top ||
       pos + $(window).height() === $(document).height()
@@ -170,7 +168,7 @@ $(function() {
     e.preventDefault();
 
     $.ajax({
-      url: 'https://formspree.io/mattwilliams85@gmail.com',
+      url: 'https://formspree.io/samg2583@hotmail.com',
       method: 'POST',
       data: { message: $('form').serialize() },
       dataType: 'json'
