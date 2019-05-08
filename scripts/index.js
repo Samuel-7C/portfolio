@@ -166,18 +166,18 @@ $(function() {
   // CONTACT FORM
   $('#contact-form').submit(function(e) {
     e.preventDefault();
-
-    $.ajax({
+    $('#success').addClass('expand');
+      $('#contact-form')
+        .find('input[type=text], input[type=email], textarea')
+        .val('');
+    /* $.ajax({
       url: 'https://formspree.io/samg2583@hotmail.com',
       method: 'POST',
       data: { message: $('form').serialize() },
       dataType: 'json'
     }).done(function(response) {
-      $('#success').addClass('expand');
-      $('#contact-form')
-        .find('input[type=text], input[type=email], textarea')
-        .val('');
-    });
+      
+    }); */
   });
 
   $('#close').click(function() {
