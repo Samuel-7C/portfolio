@@ -165,7 +165,6 @@ $(function() {
 
   // CONTACT FORM
   $('#contact-form').submit(function(e) {
-    e.preventDefault();
     $('#success').addClass('expand');
       $('#contact-form')
         .find('input[type=text], input[type=email], textarea')
